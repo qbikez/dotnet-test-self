@@ -5,7 +5,7 @@ namespace DotnetTestSelf
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static int Main(string[] args)
         {
           
             var proc = new System.Diagnostics.Process();
@@ -21,7 +21,9 @@ namespace DotnetTestSelf
             #endif
 
             proc.Start();
-            proc.WaitForExit();            
+            proc.WaitForExit();     
+
+            return proc.ExitCode;       
         }
     }
 }

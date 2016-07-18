@@ -5,8 +5,15 @@
     "emitEntryPoint": true
   },
   "testRunner": "self",
+  "packOptions": {
+    "summary": "A simple wrapper that passes execution from `dotnet test` to `dotnet run`",
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/qbikez/dotnet-test-self"
+    }    
+  },
   "dependencies": {
-    "dotnet-test-self": "1.0.0-*"
+    "dotnet-test-self": "1.0.0-master003-*"
   },
   "frameworks": {
     "netcoreapp1.0": {

@@ -7,18 +7,15 @@ namespace DotnetTestSelf
     {
         public static void Main(string[] args)
         {
-            System.Console.WriteLine("args:");
-            foreach (var a in args) {
-                System.Console.WriteLine(a);
-            }
+          
             var proc = new System.Diagnostics.Process();
             proc.StartInfo.FileName = "dotnet.exe";
-            var largs = args.ToList();
+            var largs = args.Where(a => a != "--").ToList();
             largs.Insert(0, "run");
             proc.StartInfo.Arguments = string.Join(" ", largs);
             
             proc.Start();
-            
+            proc.WaitForExit();            
         }
     }
 }

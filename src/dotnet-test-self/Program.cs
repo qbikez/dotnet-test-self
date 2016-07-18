@@ -14,6 +14,12 @@ namespace DotnetTestSelf
             largs.Insert(0, "run");
             proc.StartInfo.Arguments = string.Join(" ", largs);
             
+            #if NET451
+
+            proc.StartInfo.UseShellExecute = false;
+
+            #endif
+
             proc.Start();
             proc.WaitForExit();            
         }

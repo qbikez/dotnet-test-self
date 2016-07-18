@@ -18,4 +18,6 @@ This wrapper is useful if you want to gain more control over test process - i.e.
 
 4. Run `dotnet test` - this will invoke `dotnet run` and start your application. 
 
+## Known issues
 
+Arguments that are consumed by `dotnet` (like `--framework`) won't be passed to `dotnet run`.

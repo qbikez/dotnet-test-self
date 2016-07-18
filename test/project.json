@@ -13,7 +13,7 @@
     }    
   },
   "dependencies": {
-    "dotnet-test-self": "1.0.0-master003-*"
+    "dotnet-test-self": "1.0.1"
   },
   "frameworks": {
     "netcoreapp1.0": {

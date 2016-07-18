@@ -8,7 +8,7 @@ This wrapper is useful if you want to gain more control over test process - i.e.
 
 1. Add `dotnet-test-self` to project dependencies:
 
-    "dotnet-test-self": "1.0.0"
+    "dotnet-test-self": "1.0.1"
     
 2. Set `testRunner` in project.json to `self`:
 	

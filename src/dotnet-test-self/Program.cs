@@ -12,6 +12,7 @@ namespace DotnetTestSelf
             proc.StartInfo.FileName = "dotnet.exe";
             var largs = args.Where(a => a != "--").ToList();
             largs.Insert(0, "run");
+            largs = largs.Select(a => a.Contains(" ") ? $"\"{a}\"" : a).ToList();
             proc.StartInfo.Arguments = string.Join(" ", largs);
             
             #if NET451

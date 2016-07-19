@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.0.4",
+  "version": "1.0.5-master002-fa8ae",
   "description": "A simple wrapper that passes execution from `dotnet test` to `dotnet run`",
   "projectUrl": "http://github.com/qbikez/dotnet-test-self",
   "buildOptions": {
